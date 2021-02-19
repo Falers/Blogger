@@ -57,62 +57,7 @@ namespace Infrastructure.Repositories
               
             return result;
         }
-            /*
-            var word = "programistą";
-            var word2 = "zarabia";
-   
-            var list = new List<string>();
-            var result = new List<Post>();
-
-           
-            if (String.IsNullOrEmpty(title))
-            {
-
-                return _posts;
-            }
-            else if (String.Equals(title.ToLower().Trim(' '), word2.ToLower()))
-            {
-                foreach (var post in _posts)
-                {
-                    list = post.Title.Split(' ').ToList();
-
-                    foreach (var wordInLine in list)
-                    {
-                        if (wordInLine.ToLower().Contains(word2.ToLower()))
-                        {
-                            result.Add(post);
-                        }
-                    }
-
-                   list.Clear();
-                }
-                return result;
-            }
-            else if (String.Equals(title.ToLower().Trim(' '), word.ToLower()))
-            {
-                foreach (var post in _posts)
-                {
-                    list = post.Title.Split(' ').ToList();
-
-                    foreach (var wordInLine in list)
-                    {
-                        if (wordInLine.ToLower().Contains(word.ToLower()))
-                        {
-                            result.Add(post);
-                        }
-                    }
-                    list.Clear();
-                }
-                return result;
-            }
-            else
-            {
-                return result;
-            }
-            
-        }
-     */
-
+      
             public Post Add(Post post)
         {
             post.Id = _posts.Count() + 1;
